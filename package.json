@@ -1,0 +1,34 @@
+{
+  "name": "full-stack-typescript-with-turborepo-demo",
+  "private": false,
+  "description": "Full stack TypeScript with Turborepo demo",
+  "author": "Mehdi Bukhari",
+  "license": "MIT",
+  "keywords": [
+    "cache",
+    "demo",
+    "esbuild",
+    "express",
+    "full-stack",
+    "monorepo",
+    "node.js",
+    "optimization",
+    "pnpm",
+    "react",
+    "tsx",
+    "turborepo",
+    "typescript",
+    "vite",
+    "workspaces"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "dev:api": "turbo run dev --filter api",
+    "dev:web": "turbo run dev --filter web --filter api",
+    "type-check": "turbo run type-check",
+    "build": "turbo run build"
+  },
+  "devDependencies": {
+    "turbo": "^1.13.3"
+  }
+}
